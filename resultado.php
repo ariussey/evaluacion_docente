@@ -77,8 +77,8 @@ $resulta1->closeCursor();
     die('Error: '. $e->GetMessage());
 }
 
-$acceso = false;
-if($acceso){
+
+if($num_rows1){
     $acceso = true;
     echo 'hola';
 }
