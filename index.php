@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#001a54" />
     <link rel="icon" href="https://consulta.autonomadeica.edu.pe/views/images/icono.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Resultados Evalución Docente</title>
@@ -51,7 +52,7 @@
 
                             <div class="mt-6">
                                 <input type="submit" name="validar" value="VALIDAR"
-                                    class="formValidacion w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-800 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-600 focus:ring focus:ring-blue-700 focus:ring-opacity-20">
+                                    class="formValidacion font-semibold w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-800 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-600 focus:ring focus:ring-blue-700 focus:ring-opacity-20">
                             </div>
 
                         </form>
