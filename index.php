@@ -29,7 +29,7 @@
                 <img class="w-100 p-8 m-auto" src="https://autonomadeica.edu.pe/images/logo_negro_v2.png" alt="">
                 <hr>    
                 <div class="text-center mt-4">
-                        <h2 class="text-4xl font-semibold text-center text-gray-700 dark:text-white">Acceso</h2>
+                        <h2 class="text-4xl font-semibold text-center text-gray-700 dark:text-white">Validación UAI</h2>
                         
                         <p class="mt-3 text-gray-500 dark:text-gray-300">Ingrese sus datos para validar su identidad</p>
                     </div>
