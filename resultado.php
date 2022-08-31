@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-THEMES USAGE
     <title>Resultados</title>
 </head>
 <body>
@@ -39,7 +38,7 @@ $link1->exec("SET CHARACTER SET utf8");
 // $link2->setAttribute("PDO::ATTR_ERRMODE", PDO::ERRMODE_EXCEPTION);
 // $link2->exec("SET CHARACTER SET utf8");
 
-$sql1 = "SELECT * FROM docentes WHERE dni = '$dni' AND email_institucional = $email";
+$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = $email";
 $resulta1 = $link1->prepare($sql1);
 
 
@@ -78,7 +77,7 @@ $resulta1->closeCursor();
 }
 
 
-if($num_rows1){
+if($num_rows1>0){
     $acceso = true;
     echo 'hola';
 }
