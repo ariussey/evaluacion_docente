@@ -33,18 +33,19 @@ $link1 = new PDO('mysql:host=localhost;dbname=unpabedu_cms','unpabedu_admin','UA
 $link1->setAttribute("PDO::ATTR_ERRMODE", PDO::ERRMODE_EXCEPTION);
 $link1->exec("SET CHARACTER SET utf8");
 
-$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = '$email'";
+//$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = '$email'";
+$sql1 = "SELECT * FROM `vst_docente_evaluacion` WHERE dni = 71472219 and email_institucional = 'henry.alejos@autonomadeica.edu.pe'";
 $resulta1 = $link1->prepare($sql1);
 
 
-$sql2 = "SELECT * FROM docente_evaluacion WHERE dni = $dni";
-$resulta2 = $link1->prepare($sql2);
+// $sql2 = "SELECT * FROM docente_evaluacion WHERE dni = $dni";
+// $resulta2 = $link1->prepare($sql2);
 
 $resulta1->execute();
-$resulta2->execute();
+//$resulta2->execute();
 
-$docentes = $resulta1->fetchAll(PDO::FETCH_ASSOC);
-$evaluaciones = $resulta2->fetchAll(PDO::FETCH_ASSOC);
+$docentes_evaluaciones = $resulta1->fetchAll(PDO::FETCH_ASSOC);
+//$evaluaciones = $resulta2->fetchAll(PDO::FETCH_ASSOC);
 
 //Número de filas que tienen esta consulta
 $num_rows1 = $resulta1->rowCount();
@@ -64,10 +65,7 @@ $nombres;
 
 if($num_rows1>0){
     $acceso = true;
-    foreach($docentes as $docente){
-        $apellidos = $docente['apellidos'];
-        $nombres = $docente['nombres'];
-    }
+    
 
     ?>
 

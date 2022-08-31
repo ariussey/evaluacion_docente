@@ -25,7 +25,13 @@
                         </thead>
 
                         <tbody class="bg-white">
-                            <tr>
+                            <?php
+                            
+                            foreach($docentes_evaluaciones as $docente_evaluacion){
+                                $apellidos = $docente_evaluacion['apellidos'];
+                                $nombres = $docente_evaluacion['nombres'];
+                                echo '
+                                <tr>
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                     <div class="flex items-center">
                                         <div class="flex-shrink-0 h-10 w-10">
@@ -35,8 +41,8 @@
                                         </div>
 
                                         <div class="ml-4">
-                                            <div class="text-sm leading-5 font-medium text-gray-900"><?php echo $apellidos." ". $nombres ?></div>
-                                            <div class="text-sm leading-5 text-gray-500"><?php echo $email ?></div>
+                                            <div class="text-sm leading-5 font-medium text-gray-900">'.$docente_evaluacion['apellidos']." ". $docente_evaluacion['nombres'].'</div>
+                                            <div class="text-sm leading-5 text-gray-500">'.$docente_evaluacion['email'].'</div>
                                         </div>
                                     </div>
                                 </td>
@@ -44,15 +50,20 @@
 
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                     <span
-                                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">2022-1</span>
+                                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">'.$docente_evaluacion['periodo'].'</span>
                                 </td>
 
 
                                 <td
                                     class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Ver</a>
+                                    <a href="'.$docente_evaluacion['url'].'" class="text-indigo-600 hover:text-indigo-900">Ver</a>
                                 </td>
                             </tr>
+                                ';
+                            }
+                            
+                            ?>
+                            
             
                         </tbody>
                     </table>
