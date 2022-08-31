@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Resultados Evalución docente</title>
+    <title>Resultados Evalución docente v3</title>
 </head>
 <body>
 <!-- component -->
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="mt-8">
-                        <form action="resultado.php" method="post" id="formValidacion>
+                        <form action="resultado.php" method="post" id="formValidacion">
                             <div>
                                 <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Correo Institucional</label>
                                 <input type="email" name="email" id="email" placeholder="example@autonomadeica.edu.pe" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
@@ -47,7 +47,7 @@
                             </div>
 
                             <div class="mt-6">
-                                <input type="submit" name="validad" value="Validar"
+                                <input type="submit" name="validar" value="Validar"
                                     class="formValidacion w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                             </div>
 
