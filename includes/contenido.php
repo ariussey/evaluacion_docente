@@ -28,8 +28,6 @@
                             <?php
                             
                             foreach($docentes_evaluaciones as $docente_evaluacion){
-                                $apellidos = $docente_evaluacion['apellidos'];
-                                $nombres = $docente_evaluacion['nombres'];
                                 echo '
                                 <tr>
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">

@@ -49,18 +49,15 @@ $docentes_evaluaciones = $resulta1->fetchAll(PDO::FETCH_ASSOC);
 
 //Número de filas que tienen esta consulta
 $num_rows1 = $resulta1->rowCount();
-$num_rows2 = $resulta2->rowCount();
+//$num_rows2 = $resulta2->rowCount();
 
 // echo 'Conexion Ok';
 $resulta1->closeCursor();
-$resulta2->closeCursor();
+//$resulta2->closeCursor();
 
 } catch(Exception $e){
     die('Error: '. $e->GetMessage());
 }
-
-$apellidos;
-$nombres;
 
 
 if($num_rows1>0){
