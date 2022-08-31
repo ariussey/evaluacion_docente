@@ -20,7 +20,7 @@
                                     class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                     Semestre</th>
 
-                                <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
+                                <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Descargar</th>
                             </tr>
                         </thead>
 
@@ -34,7 +34,7 @@
                                     <div class="flex items-center">
                                         <div class="ml-4">
                                             <div class="text-sm leading-5 font-medium text-gray-900">'.$docente_evaluacion['apellidos']." ". $docente_evaluacion['nombres'].'</div>
-                                            <div class="text-sm leading-5 text-gray-500">'.$docente_evaluacion['email'].'</div>
+                                            <div class="text-sm leading-5 text-gray-500">'.$docente_evaluacion['email_institucional'].'</div>
                                         </div>
                                     </div>
                                 </td>
@@ -42,13 +42,13 @@
 
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                     <span
-                                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">'.$docente_evaluacion['periodo'].'</span>
+                                        class="px-2 inline-flex text-xs leading-5 font-bold rounded-full bg-blue-200 text-blue-900">'.$docente_evaluacion['periodo'].'</span>
                                 </td>
 
 
                                 <td
                                     class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-                                    <a href="'.$docente_evaluacion['url'].'" class="text-indigo-600 hover:text-indigo-900"><i class="fa-solid fa-file-arrow-down text-red-500 hover:text-red-800"></i></a>
+                                    <a href="'.$docente_evaluacion['url'].'" class="text-indigo-600 hover:text-indigo-900"><i class="fa-solid fa-2x fa-file-arrow-down text-red-500 hover:text-red-800 hover:scale"></i></a>
                                 </td>
                             </tr>
                                 ';

@@ -7,9 +7,9 @@
                 <hr>
                 <nav class="mt-10">
                     <a class="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="/">
-                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <i class="fa-solid fa-2x fa-person-chalkboard"></i>
         
-                        <span class="mx-3">Evaluación Docente</span>
+                        <span class="mx-3 font-semibold text-sm">Evaluación Docente</span>
                     </a>
         
                     
