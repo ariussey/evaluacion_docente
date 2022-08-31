@@ -10,6 +10,7 @@
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
     <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/f3c27aba35.js" crossorigin="anonymous"></script>
 
     <title>Resultados Evalución Docente</title>
 </head>
@@ -107,7 +108,7 @@ else{
         confirmButtonText: "Regresar"
       }).then((result) => {
         if (result.isConfirmed) {
-            window.location = "https://autonomadeica.edu.pe/evaluacion-docente";
+            window.location = "https://evaluacion-docente.autonomadeica.edu.pe";
         }
       })
 
