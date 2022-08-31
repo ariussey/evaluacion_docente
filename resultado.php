@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <title>Resultados</title>
+    <title>Resultados v4</title>
 </head>
 <body>
     <!-- tailwind.config.js -->
@@ -79,7 +79,7 @@ $resulta1->closeCursor();
 
 if($num_rows1>0){
     $acceso = true;
-    echo 'hola';
+    echo $res1;
 }
 
 else{
@@ -114,25 +114,6 @@ else{
 ?>
  
 
-    <div>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        
-        <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-gray-200">
-            <div :class="sidebarOpen ? 'block' : 'hidden'" @click="sidebarOpen = false" class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"></div>
-        
-            <?php
-            include 'includes/aside.php';
-            ?>
-            <div class="flex-1 flex flex-col overflow-hidden">
-                <?php
-                    include 'includes/header.php';
 
-
-                    include 'includes/contenido.php';
-                ?>
-                
-            </div>
-        </div>
-    </div>
 </body>
 </html>
