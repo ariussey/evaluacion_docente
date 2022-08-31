@@ -35,9 +35,8 @@
                                         </div>
 
                                         <div class="ml-4">
-                                            <div class="text-sm leading-5 font-medium text-gray-900">John Doe
-                                            </div>
-                                            <div class="text-sm leading-5 text-gray-500">john@example.com</div>
+                                            <div class="text-sm leading-5 font-medium text-gray-900"><?php echo $apellidos." ". $nombres ?></div>
+                                            <div class="text-sm leading-5 text-gray-500"><?php echo $email ?></div>
                                         </div>
                                     </div>
                                 </td>
