@@ -92,15 +92,27 @@ if($num_rows1>0){
 }
 else{
     
-    echo "<script>
+    echo '<script>
 
-    Swal.fire(
-        'The Internet?',
-        'That thing is still around?',
-        'question'
-      )
+    Swal.fire({
+        icon: "error",
+        title: "¡ El DNI '.$dni.' no está registrado !",
+        text: "El DNI ingresado no está registrado, si se trata de un error envía un correo con tus datos al siguiente e-mail: aulavirtual.soporte@autonomadeica.edu.pe",
+        confirmButtonText: "Cerrar",
+        closeOnConfirm: false
+        },
 
-</script>";
+        function(isConfirm){
+
+            if (isConfirm) {
+
+                window.location = "https://autonomadeica.edu.pe/evaluacion-docente";
+
+            }
+
+    })
+
+</script>';
     
 }
 
