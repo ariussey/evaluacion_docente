@@ -34,7 +34,7 @@ $link1->setAttribute("PDO::ATTR_ERRMODE", PDO::ERRMODE_EXCEPTION);
 $link1->exec("SET CHARACTER SET utf8");
 
 //$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = '$email'";
-$sql1 = "SELECT * FROM `vst_docente_evaluacion` WHERE dni = 71472219 and email_institucional = 'henry.alejos@autonomadeica.edu.pe'";
+$sql1 = "SELECT * FROM vst_docente_evaluacion WHERE dni = $dni and email_institucional = '$email'";
 $resulta1 = $link1->prepare($sql1);
 
 
