@@ -9,7 +9,7 @@
     <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <title>Resultados v4</title>
+    <title>Resultados Evalución Docente</title>
 </head>
 <body>
     <!-- tailwind.config.js -->
@@ -99,7 +99,7 @@ else{
     Swal.fire({
         icon: "error",
         title: "¡ El DNI '.$dni.' no está registrado !",
-        text: "El DNI ingresado no está registrado, si se trata de un error envía un correo con tus datos al siguiente e-mail: aulavirtual.soporte@autonomadeica.edu.pe",
+        text: "Si crees que se trata de un error envía un correo con tus datos al siguiente e-mail: <b>aulavirtual.soporte@autonomadeica.edu.pe</b>",
         showCancelButton: false,
         confirmButtonColor: "#3085d6",
         confirmButtonText: "Regresar"

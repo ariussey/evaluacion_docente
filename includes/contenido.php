@@ -1,6 +1,6 @@
 <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
     <div class="container mx-auto px-6 py-8">
-        <h3 class="text-gray-700 text-3xl font-medium">Dashboard</h3>
+        <h3 class="text-gray-700 text-3xl font-medium">Resultados de la Evaluación Docente</h3>
 
         <div class="mt-8">
 
@@ -30,14 +30,8 @@
                             foreach($docentes_evaluaciones as $docente_evaluacion){
                                 echo '
                                 <tr>
-                                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                <td class="px-2 whitespace-no-wrap border-b border-gray-200">
                                     <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                                                alt="">
-                                        </div>
-
                                         <div class="ml-4">
                                             <div class="text-sm leading-5 font-medium text-gray-900">'.$docente_evaluacion['apellidos']." ". $docente_evaluacion['nombres'].'</div>
                                             <div class="text-sm leading-5 text-gray-500">'.$docente_evaluacion['email'].'</div>
