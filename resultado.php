@@ -38,7 +38,7 @@ $link1->exec("SET CHARACTER SET utf8");
 // $link2->setAttribute("PDO::ATTR_ERRMODE", PDO::ERRMODE_EXCEPTION);
 // $link2->exec("SET CHARACTER SET utf8");
 
-$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = $email";
+$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = '$email'";
 $resulta1 = $link1->prepare($sql1);
 
 
@@ -79,9 +79,10 @@ $resulta1->closeCursor();
 
 if($num_rows1>0){
     $acceso = true;
-    echo $res1;
+    foreach($res1 as $dato){
+        echo $dato['dni'];
+    }
 }
-
 else{
     
     echo '<script>
@@ -113,7 +114,26 @@ else{
 //FIN CODIGO LIMPIO
 ?>
  
+    <div>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        
+        <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-gray-200">
+            <div :class="sidebarOpen ? 'block' : 'hidden'" @click="sidebarOpen = false" class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"></div>
+        
+            <?php
+            include 'includes/aside.php';
+            ?>
+            <div class="flex-1 flex flex-col overflow-hidden">
+                <?php
+                    include 'includes/header.php';
 
+
+                    include 'includes/contenido.php';
+                ?>
+                
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
