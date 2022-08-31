@@ -99,7 +99,7 @@ else{
         title: "¡ El DNI '.$dni.' no está registrado !",
         text: "El DNI ingresado no está registrado, si se trata de un error envía un correo con tus datos al siguiente e-mail: aulavirtual.soporte@autonomadeica.edu.pe",
         confirmButtonText: "Cerrar",
-        closeOnConfirm: false
+        closeOnConfirm: true
         },
 
         function(isConfirm){
