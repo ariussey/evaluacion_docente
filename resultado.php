@@ -36,7 +36,7 @@ $link1->setAttribute("PDO::ATTR_ERRMODE", PDO::ERRMODE_EXCEPTION);
 $link1->exec("SET CHARACTER SET utf8");
 
 //$sql1 = "SELECT * FROM docentes WHERE dni = $dni AND email_institucional = '$email'";
-$sql1 = "SELECT * FROM vst_docente_evaluacion WHERE dni = $dni and email_institucional = '$email'";
+$sql1 = "SELECT * FROM vst_docente_evaluacion WHERE dni = $dni and email_institucional = '$email' ORDER BY periodo DESC";
 $resulta1 = $link1->prepare($sql1);
 
 
@@ -99,7 +99,7 @@ else{
     Swal.fire({
         icon: "error",
         title: "¡ No registrado !",
-        text: "El DNI o el correo institucional ingresado no son correctos, si crees que se trata de un error envía un correo con tus datos al siguiente e-mail: <b>aulavirtual.soporte@autonomadeica.edu.pe</b>",
+        text: "El DNI o el correo institucional ingresado no son correctos, si crees que se trata de un error envía un correo con tus datos al siguiente e-mail: aulavirtual.soporte@autonomadeica.edu.pe",
         showCancelButton: false,
         confirmButtonColor: "#3085d6",
         confirmButtonText: "Regresar"
