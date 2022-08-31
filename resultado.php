@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Resultados v4</title>
 </head>
 <body>
@@ -98,10 +100,9 @@ else{
         icon: "error",
         title: "¡ El DNI '.$dni.' no está registrado !",
         text: "El DNI ingresado no está registrado, si se trata de un error envía un correo con tus datos al siguiente e-mail: aulavirtual.soporte@autonomadeica.edu.pe",
-        showCancelButton: true,
+        showCancelButton: false,
         confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!"
+        confirmButtonText: "Regresar"
       }).then((result) => {
         if (result.isConfirmed) {
             window.location = "https://autonomadeica.edu.pe/evaluacion-docente";
