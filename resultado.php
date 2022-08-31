@@ -92,28 +92,15 @@ if($num_rows1>0){
 }
 else{
     
-    echo '<script>
+    echo "<script>
 
-    swal({
+    Swal.fire(
+        'The Internet?',
+        'That thing is still around?',
+        'question'
+      )
 
-    title:"¡ El DNI '.$dni.' no está registrado !",
-    text: "El DNI ingresado no está registrado, si se trata de un error envía un correo con tus datos al siguiente e-mail: aulavirtual.soporte@autonomadeica.edu.pe",
-    type: "error",
-    confirmButtonText: "Cerrar",
-    closeOnConfirm: false
-    },
-
-    function(isConfirm){
-
-        if (isConfirm) {
-
-            window.location = "https://consulta.autonomadeica.edu.pe/consulta.php";
-
-        }
-
-})
-
-</script>';
+</script>";
     
 }
 
