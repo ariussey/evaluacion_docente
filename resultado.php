@@ -98,8 +98,8 @@ else{
     
     Swal.fire({
         icon: "error",
-        title: "¡ El DNI '.$dni.' no está registrado !",
-        text: "Si crees que se trata de un error envía un correo con tus datos al siguiente e-mail: <b>aulavirtual.soporte@autonomadeica.edu.pe</b>",
+        title: "¡ No registrado !",
+        text: "El DNI o el correo institucional ingresado no son correctos, si crees que se trata de un error envía un correo con tus datos al siguiente e-mail: <b>aulavirtual.soporte@autonomadeica.edu.pe</b>",
         showCancelButton: false,
         confirmButtonColor: "#3085d6",
         confirmButtonText: "Regresar"
